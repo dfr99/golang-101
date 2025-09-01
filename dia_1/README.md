@@ -10,9 +10,13 @@
 - Funciones y parámetros.
 - Control de flujo: `if`, `for`, `switch`.
 
-#### Ejercicios (1h):
+### Ejercicios (1h):
 
 - Imprimir “Hola Go”.
 - Calcular el área de un círculo (con funciones).
 - Iterar sobre un array con `for`.
 - Uso de switch para clasificar edades.
+
+### Reto (30 min):
+
+- Escribe un programa que reciba un número y diga si es primo o no.
