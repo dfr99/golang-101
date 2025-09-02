@@ -59,4 +59,3 @@ func stringIndex(s, substr string) int {
 	}
 	return -1
 }
-}

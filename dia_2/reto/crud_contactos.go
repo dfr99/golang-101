@@ -4,12 +4,12 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"os"
 	"strings"
 
+	"github.com/dfr99/golang-101/dia_2/reto/makeacall"
 	"github.com/joho/godotenv"
-
-	"makeacall"
 )
 
 func main() {
