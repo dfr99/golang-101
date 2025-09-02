@@ -1,4 +1,4 @@
-package make_a_call
+package makeacall
 
 import (
 	"fmt"
@@ -43,6 +43,8 @@ func Llamar(numero string) {
 		return
 	}
 	fmt.Printf("✅ Llamada iniciada a %s, SID: %s\n", numero, *resp.Sid)
+}
+
 // contains es un helper para comprobar si un substring está en un string
 func contains(s, substr string) bool {
 	return len(s) > 0 && len(substr) > 0 && (stringIndex(s, substr) >= 0)

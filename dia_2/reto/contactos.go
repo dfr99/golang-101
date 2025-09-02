@@ -7,24 +7,25 @@ import (
 	"os"
 	"strings"
 
-	"github.com/dfr99/golang-101/dia_2/reto/make_a_call" // importa tu librería
 	"github.com/joho/godotenv"
+
+	"makeacall"
 )
 
 func main() {
-		// Cargar variables de entorno desde .env
+	// Cargar variables de entorno desde .env
 	err := godotenv.Load()
 	if err != nil {
 		log.Fatalf("Error cargando el .env: %v", err)
 	}
 
 	// Asignar variables a la librería
-	make_a_call.AccountSID = os.Getenv("TWILIO_ACCOUNT_SID")
-	make_a_call.AuthToken = os.Getenv("TWILIO_AUTH_TOKEN")
-	make_a_call.FromNumber = os.Getenv("TWILIO_FROM_NUMBER")
-	make_a_call.Url = os.Getenv("TWILIO_TWIML_URL")
+	makeacall.AccountSID = os.Getenv("TWILIO_ACCOUNT_SID")
+	makeacall.AuthToken = os.Getenv("TWILIO_AUTH_TOKEN")
+	makeacall.FromNumber = os.Getenv("TWILIO_FROM_NUMBER")
+	makeacall.Url = os.Getenv("TWILIO_TWIML_URL")
 
-	if make_a_call.AccountSID == "" || make_a_call.AuthToken == "" || make_a_call.FromNumber == "" {
+	if makeacall.AccountSID == "" || makeacall.AuthToken == "" || makeacall.FromNumber == "" {
 		log.Fatal("❌ Faltan variables de Twilio en .env")
 	}
 
@@ -85,7 +86,7 @@ func main() {
 			nombre = strings.TrimSpace(nombre)
 
 			if numero, ok := contactos[nombre]; ok {
-				make_a_call.Llamar(numero)
+				makeacall.Llamar(numero)
 			} else {
 				fmt.Println("❌ Contacto no encontrado.")
 			}

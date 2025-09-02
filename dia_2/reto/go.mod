@@ -1,4 +1,4 @@
-module github.com/dfr99/golang-101
+module makeacall/makeacall.go
 
 go 1.25.0
 
