@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"demo-math/mathutils"
+	"github.com/dfr99/golang-101/dia_4/ejercicios/mathutils"
 )
 
 func main() {

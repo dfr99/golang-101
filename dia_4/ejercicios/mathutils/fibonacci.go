@@ -15,8 +15,6 @@ func Fibonacci(n int) int {
 	return Fibonacci(n-1) + Fibonacci(n-2)
 }
 
-package mathutils
-
 // FibonacciIter devuelve el enésimo número de Fibonacci de forma iterativa.
 func FibonacciIter(n int) int {
 	if n < 0 {
